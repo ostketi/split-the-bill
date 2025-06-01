@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Split</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="container">
+      <h1>Let`s split our payment!</h1>
+      <form>
+         <div class="payment">
+            <p>Cost💰</p>
+            <span>$
+            <input type="text" class="price" placeholder="price">
+            </span>
+            <button class="btn" type="submit">➕</button>
+            <ul class="paid">
+            </ul>
+            <div>
+               <button class="btnOne">Count</button>
+               <p id="result"></p>
+            </div>
+         </div>
+         <div class="peopleTotal">
+            <p>😎Number of people</p>
+            <span>
+            <input type="text" id="people" placeholder="How many people?">
+            </span>
+         </div>
+         <button id="buttonTotal">Calculate</button>
+      </form>
+      <div id="showTotalAmountToPay">
+         <div id="billSplit">
+         <span>Bill</span>
+            <span>$</span>
+            <span id="dividedBill"></span>
+            <span>per person</span>
+         </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
